@@ -55,7 +55,7 @@ table {
   ========================================
 */
 html{
-  font-family: "Helvetica Neue", sans-serif, Helvetica, Arial;
+  font-family: Palatino;
 
 }
 body{
@@ -79,8 +79,12 @@ body{
 
 .container {
   margin: 0 auto;
-
   width: 960px;
+}
+
+.math {
+  margin: 0 auto;
+  width: 600px;
 }
 
 /*
@@ -95,6 +99,12 @@ body{
 p{
   font-size 200%;
 }
+.bold {
+  font-weight:bold;
+}
+.italic {
+  font-style: italic
+}
 /*
   ========================================
   Buttons
@@ -102,7 +112,7 @@ p{
 */
 
 .btn {
-  border: 4px solid #649980;
+  border: 2px solid #222222;
   padding: 10px 24px;
   font-weight: bold;
   background-color: white;
@@ -162,14 +172,14 @@ p{
 */
 
 .logo {
-  border: 4px solid #649980;
+  border: 2px solid #222222;
   padding: 40px 0 5px 0;
   margin: 0 auto;
   width: 960px;
   text-align: center;
   display: block;
   background-image: url("/assets/images/green.jpg");
-  color: #0091C2;
+  color: #222222;
 
 }
 
@@ -184,7 +194,7 @@ p{
   padding-bottom: 44px;
   padding-top: 44px;
   margin-top: 30px;
-  border-top: 4px solid #648880;
+  border-top: 2px solid #222222;
 }
 
 li {
@@ -236,4 +246,16 @@ ul{
 }
 .container {
 
+}
+
+/*
+  ========================================
+  For images
+  ========================================
+*/
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }

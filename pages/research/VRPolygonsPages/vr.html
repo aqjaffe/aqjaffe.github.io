@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link  href="../VRPolygonsAssets/latex.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Adam's Website</title>
+</head>
+
+<body>
+  <header class= "container group">
+    <div class = "logo">
+      <a class="btn btn-bak" href="../../../index.html">Back</a>
+    <h1>
+      Vietoris-Rips Complexes
+    </h1>
+      </div>
+    <nav class="hero">
+      <a class="btn btn-alt" href="../VRPolygons.html">Home</a>
+      <a class="btn btn-alt" href="../VRPolygonsPages/ph.html">Persistent Homology</a>
+      <a class="btn btn-alt" href="../VRPolygonsPages/vr.html">VR Complexes</a>
+      <a class="btn btn-alt" href="../VRPolygonsPages/mcg.html">Metric Cyclic Graphs</a>
+      <a class="btn btn-alt" href="../VRPolygonsPages/stars.html">Stars</a>
+      <a class="btn btn-alt" href="../VRPolygonsPages/theorem.html">Main Theorem</a>
+    </nav>
+  </header>
+
+    <section class = "math">
+      <p>One of the most popular (read: computationaly efficient) thickenings
+        of a point cloud used in TDA is the following:</p>
+
+        <p><span class="bold">Definition. </span>For a finite metric space X,
+        and a scale parameter r >= 0, the <a href="https://en.wikipedia.org/wiki/Vietoris%E2%80%93Rips_complex"
+        target="_blank"><span class="italic">Vietoris-Rips Complex</span></a>
+        (or simply, <span class="italic">VR Complex</span>), denoted by VR(X;r)
+        is the complex that contains a finite simplex \sigma \subseteq X
+        whenever diam(\sigma) < r.</p>
+
+        <table class="image">
+        <caption align="bottom">An example VR Complex built on a point cloud.</caption>
+        <tr><td><img class="centered" src="../VRPolygonsAssets/RipsExample.png" align="middle" style width="50%"></td></tr>
+        </table>
+
+        <p></p>
+
+        <p>Here we make two important remarks about VR Complexes:</p>
+
+        <p><span class="bold">Remark 1. </span>For every scale parameter r >= 0,
+        the complex VR(X;r) is <a href="https://en.wikipedia.org/wiki/Simplicial_complex"
+        target="_blank"><span class="italic">simplicial</span></a>. That is, it
+        satisifes the properties: (1) If \sigma is in VR(X;r) and if \tau is
+        in \sigma, then \tau is in VR(X;r), and (2) If \sigma and \tau are in
+        VR(X;r), then \sigma \cap \tau is in VR(X;r).</p>
+
+        <p><span class="bold">Remark 2. </span>For any scale parameters r ' >=
+        r >= 0, there is a natural inclusion map VR(X;r) \to VR(X;r'). That is,
+        any inceasing sequence of scale parameters gives rise to an increasing
+        sequence of simplicial complexes, called a <span class="italic">
+        simplicial filtration</span>.</p>
+
+        <p>These remarks are necessary in a technical sense because they prove
+        that one can examine the persistent homology the point cloud.</p>
+
+        <table class="image">
+        <caption align="bottom">An example simplicial filtration of a point cloud.</caption>
+        <tr><td><img class="centered" src="../VRPolygonsAssets/RipsExample.png" align="middle" style width="50%"></td></tr>
+        </table>
+
+        <p></p>
+    </section>
+
+    <footer class="primary-footer container group">
+      <small>&copy; Adam Jaffe 2017
+      </small>
+    </footer>
+
+  </body>
+</html>
