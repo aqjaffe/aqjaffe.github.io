@@ -3,7 +3,7 @@
 <head>
   <link  href="../VRPolygonsAssets/latex.css" rel="stylesheet">
   <meta charset="utf-8">
-  <title>Adam's Website</title>
+  <title>VR Polygons</title>
 </head>
 
 <body>
@@ -24,23 +24,81 @@
     </nav>
   </header>
 
-    <section class = "container grid">
-          <h2>Stanford University</h2>
-          <h5>Mathematics</h5>
+  <section class = "math">
+        <p>To get a sense of how these inscribed stars behave, we created a
+        collection of MATLAB simulations that could trace these inscribed stars.
+        The source code can be accessed from the following link:</p>
 
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;Some stuff here.</p>
+        <a href="https://github.com/aqjaffe/InscribedStarsDynamicalSystems">MATLAB Source Code</a>
 
-          <h2>Burlingame High School</h2>
-          <h5>Burlingame, CA</h5>
+        <p></p>
 
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;
-            Burlingame is a quaint public high school nestled between Silicon
-            Valley and San Francisco. While there, Adam repeatedly made the
-            dean's list while receiving distinctions in Mathematics and community
-            service. As the president of the California Scolarship Federation,
-            he helped countless students recieve the recognition they deserved.
-          </p>
-    </section>
+        <p>These simulations can illustrate some of the interesting behavior
+        and phenomena that these inscribed stars exhibit, in a variety of cases.
+        In what follows, we include a few animated examples of inscribing a star (blue)
+        into a regular polygon (black) parameterized by a moving basepoint (red).
+        In some of the animations and plots, there is noise that is derived from
+        the limited resolution of the simulation.</p>
+
+        <h1>2l+1 divides n</h1>
+
+        <p>In this case, every inscribed star is both equilateral and equiangular.
+        That is, the inscribed star for every basepoint is similar to every other.
+        Here we also get very simply explicit formulas for the locations of
+        vertices of each star, which allows us to compute the side length
+        function explicitly. We find that this side length function takes on a
+        simple (almost) parabolic shape.</p>
+
+        <h4>3-star in P6</h4>
+        <div>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(6,3).gif" height="200"/>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(6,3)PLOT.png" height="250"/>
+        </div>
+
+        <h4>3-star in P9</h4>
+        <div>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(9,3).gif" height="200"/>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(9,3)PLOT.png" height="250"/>
+        </div>
+
+        <h4>5-star in P10</h4>
+        <div>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(10,5).gif" height="200"/>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(10,5)PLOT.png" height="250"/>
+        </div>
+
+        <h1>n = 4l+3</h1>
+
+        <p>In this case where n is one away from a multiple of 2l+1, we can
+        observe some interesting phenomena. The inscribed stars are no longer
+        necessarily equiangular, and the resulting side length plot takes on a
+        piecewise parabolic shape. Also, the animations show that the inscribed
+        stars have an odd tendency "breathing" while the move.</p>
+
+        <h4>3-star in P7</h4>
+        <div>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(7,3).gif" height="200"/>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(7,3)PLOT.png" height="250"/>
+        </div>
+
+        <h4>5-star in P11</h4>
+        <div>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(11,5).gif" height="200"/>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(11,5)PLOT.png" height="250"/>
+        </div>
+
+        <h4>7-star in P15</h4>
+        <div>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(15,7).gif" height="200"/>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(15,7)PLOT.png" height="250"/>
+        </div>
+
+        <h4>9-star in P19</h4>
+        <div>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(19,9).gif" height="200"/>
+          <img src="../VRPolygonsAssets/InscribeAllEquiStars(19,9)PLOT.png" height="250"/>
+        </div>
+  </section>
 
     <footer class="primary-footer container group">
       <small>&copy; Adam Jaffe 2017

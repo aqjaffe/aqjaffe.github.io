@@ -3,7 +3,7 @@
 <head>
   <link  href="../VRPolygonsAssets/latex.css" rel="stylesheet">
   <meta charset="utf-8">
-  <title>Adam's Website</title>
+  <title>VR Polygons</title>
 </head>
 
 <body>
@@ -55,17 +55,37 @@
         r >= 0, there is a natural inclusion map VR(X;r) \to VR(X;r'). That is,
         any inceasing sequence of scale parameters gives rise to an increasing
         sequence of simplicial complexes, called a <span class="italic">
-        simplicial filtration</span>.</p>
+        VR simplicial filtration</span>.</p>
 
         <p>These remarks are necessary in a technical sense because they prove
         that one can examine the persistent homology the point cloud.</p>
 
         <table class="image">
-        <caption align="bottom">An example simplicial filtration of a point cloud.</caption>
+        <caption align="bottom">A VR simplicial filtration of a point cloud.</caption>
         <tr><td><img class="centered" src="../VRPolygonsAssets/RipsExample.png" align="middle" style width="50%"></td></tr>
         </table>
 
         <p></p>
+
+        <p>The importance of the VR simplicial filtration is solidified by an
+        important theorem, proving that the resulting persistent homology
+        barcodes from a VR simplicial filtration are "stable".</p>
+
+        <p><span class="bold">Theorem. </span>For topological spaces X and Y,
+        we have |X-Y| <= 2|PH(X)-PH(Y)|.</p>
+
+        <p>One often likes to imagine that a point cloud X was created through a
+        (noisy) sampling from a manifold M. In this case, the stability theorem
+        tells us that the barcodes of X and the barcodes of M cannot be too
+        different.</p>
+
+        <p><span class="bold">Theorem. </span> X \to M implies PH(X) \to PH(M)
+        for any manifold M.</p>
+
+        <p>However, there are very few manifolds M for which the barcodes PH(M)
+        are known. Towards this end, we were able to compute PH(M) for M = P_n,
+        the boundary of any regular polygon, equipped with the Euclidean metric
+        of the plane.</p>
     </section>
 
     <footer class="primary-footer container group">
