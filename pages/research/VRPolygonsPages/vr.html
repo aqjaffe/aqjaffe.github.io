@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
   <link  href="../VRPolygonsAssets/latex.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>VR Polygons</title>
@@ -28,12 +31,12 @@
       <p>One of the most popular (read: computationaly efficient) thickenings
         of a point cloud used in TDA is the following:</p>
 
-        <p><span class="bold">Definition. </span>For a finite metric space X,
-        and a scale parameter r >= 0, the <a href="https://en.wikipedia.org/wiki/Vietoris%E2%80%93Rips_complex"
+        <p><span class="bold">Definition. </span>For a finite metric space \(X\),
+        and a scale parameter \(r > 0\), the <a href="https://en.wikipedia.org/wiki/Vietoris%E2%80%93Rips_complex"
         target="_blank"><span class="italic">Vietoris-Rips Complex</span></a>
-        (or simply, <span class="italic">VR Complex</span>), denoted by VR(X;r)
-        is the complex that contains a finite simplex \sigma \subseteq X
-        whenever diam(\sigma) < r.</p>
+        (or simply, <span class="italic">VR Complex</span>), denoted by \(VR(X;r)\)
+        is the complex that contains a finite simplex \(\sigma \subseteq X\)
+        whenever diam\((\sigma) < r.\)</p>
 
         <table class="image">
         <caption align="bottom">An example VR Complex built on a point cloud.</caption>
@@ -44,15 +47,15 @@
 
         <p>Here we make two important remarks about VR Complexes:</p>
 
-        <p><span class="bold">Remark 1. </span>For every scale parameter r >= 0,
-        the complex VR(X;r) is <a href="https://en.wikipedia.org/wiki/Simplicial_complex"
+        <p><span class="bold">Remark 1. </span>For every scale parameter \(r \ge 0\),
+        the complex \(VR(X;r)\) is <a href="https://en.wikipedia.org/wiki/Simplicial_complex"
         target="_blank"><span class="italic">simplicial</span></a>. That is, it
-        satisifes the properties: (1) If \sigma is in VR(X;r) and if \tau is
-        in \sigma, then \tau is in VR(X;r), and (2) If \sigma and \tau are in
-        VR(X;r), then \sigma \cap \tau is in VR(X;r).</p>
+        satisifes the properties: (1) If \(\sigma\) is in \(VR(X;r)\) and if \(\tau\) is
+        in \(\sigma\), then \(\tau\) is in \(VR(X;r)\), and (2) If \(\sigma\) and \(\tau\) are in
+        V\(R(X;r)\), then \(\sigma \cap \tau\) is in \(VR(X;r)\).</p>
 
-        <p><span class="bold">Remark 2. </span>For any scale parameters r ' >=
-        r >= 0, there is a natural inclusion map VR(X;r) \to VR(X;r'). That is,
+        <p><span class="bold">Remark 2. </span>For any scale parameters \(r' \ge
+        r > 0\), there is a natural inclusion map \(VR(X;r) \to VR(X;r')\). That is,
         any inceasing sequence of scale parameters gives rise to an increasing
         sequence of simplicial complexes, called a <span class="italic">
         VR simplicial filtration</span>.</p>
@@ -71,21 +74,21 @@
         important theorem, proving that the resulting persistent homology
         barcodes from a VR simplicial filtration are "stable".</p>
 
-        <p><span class="bold">Theorem. </span>For topological spaces X and Y,
-        we have |X-Y| <= 2|PH(X)-PH(Y)|.</p>
+        <p><span class="bold">Theorem. </span>For topological spaces \(X\) and \(Y\),
+        we have \(d_B(PH(X),PH(Y)) \le 2d_{GH}(X,Y).\)</p>
 
-        <p>One often likes to imagine that a point cloud X was created through a
-        (noisy) sampling from a manifold M. In this case, the stability theorem
-        tells us that the barcodes of X and the barcodes of M cannot be too
+        <p>One often likes to imagine that a point cloud \(X\) was created through a
+        (noisy) sampling from a manifold \(M\). In this case, the stability theorem
+        tells us that the barcode of \(X\) and the barcode of \(M\) cannot be too
         different.</p>
 
-        <p><span class="bold">Theorem. </span> X \to M implies PH(X) \to PH(M)
-        for any manifold M.</p>
+        <p><span class="bold">Theorem. </span> \(X \to M\) implies \(PH(X) \to PH(M)\)
+        for any manifold \(M.\)</p>
 
-        <p>However, there are very few manifolds M for which the barcodes PH(M)
-        are known. Towards this end, we were able to compute PH(M) for M = P_n,
-        the boundary of any regular polygon, equipped with the Euclidean metric
-        of the plane.</p>
+        <p>However, there are very few (infinite, continuous) manifolds \(M\)
+        for which the barcodes \(PH(M)\) are known. Towards this end, we were
+        able to compute \(PH(M)\) for \(M = P_n\) the boundary of any regular
+        polygon, equipped with the Euclidean metric of the plane.</p>
     </section>
 
     <footer class="primary-footer container group">

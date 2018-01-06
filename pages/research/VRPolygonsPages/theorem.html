@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
   <link  href="../VRPolygonsAssets/latex.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>VR Polygons</title>
@@ -27,7 +30,16 @@
   <section class = "math">
         <p>The main result of our research lies in the following theorem:</p>
 
-        <img class="centered" src="../VRPolygonsAssets/maintheorem.png" align="middle" style width="100%">
+        Denoting \(q_\ell = n/\)gcd\((n,2\ell+1)\), we have:
+
+        \[ VR(P_n;r)\simeq \begin{cases}
+        \bigvee^{q_\ell-1}S^{2\ell}&\mbox{ when }s_{n,\ell} < r \le t_{n,\ell}\\
+        S^{2\ell+1}&\mbox{ when }t_{n,\ell} < r\le s_{n,\ell+1}\end{cases}
+        \mbox{ for some } \ell \in \mathbb{N} \]
+
+        and all of the summands in question are persistent.
+
+        <p></p>
 
         <p>As an example of the theorem, we can find the barcodes for P15:</p>
 
