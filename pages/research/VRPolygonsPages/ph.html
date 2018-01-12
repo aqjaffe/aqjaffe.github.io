@@ -19,17 +19,23 @@
 
   <div class="sidenav">
     <h4><a href="../VRPolygons.html">Home</a></h4>
-    <h4><a href="ph.html">Persistent Homology</a></h4>
-    <h4><a href="vr.html">VR Complexes</a></h4>
-    <h4><a href="mcg.html">Metric Cyclic Graphs</a></h4>
-    <h4><a href="stars.html">Stars</a></h4>
+    <h4><a href="ph.html">What is Persistent Homology?</a></h4>
+    <h4><a href="vr.html">Vietoris-Rips Complexes</a></h4>
+    <h4><a href="mcg.html">Cyclic Graphs and Winding Fraction</a></h4>
+    <h4><a href="stars.html">Stars Inscribed in Regular Polygons</a></h4>
     <h4><a href="theorem.html">Main Theorem</a></h4>
   </div>
 
   <div class="container main">
     <section class = "math">
-      <p>Any collection of points in space may (noisily) take on a "shape" which
-        a data scientist would want to learn and understand. Of course, any
+      <p>In the last two decades, there has been growing interest in analyzing
+        the "shape" of data. Precisely, any collection of points in space may
+        take on some shape (say, it was noisily sampled from an
+        underlying manifold), and data scientists or others might gain insight
+        into their data set by uncovering this shape. To accomplish this, the
+        tools of topology are apt.</p>
+
+        <p>Of course, any
         point cloud can be considered a topological space with an obvious
         discrete topology endowed, but this does lend much insight. Instead, one
         often wants to "thicken" such a space to one with a less trivial topology.
@@ -41,11 +47,11 @@
 
         <p>In the most general case, we can resolve the issue of not being able
         to choose a single canonical scale parameter by instead letting the
-        scale parameter take on a range of values and checking the shape of the
-        thickening at every scale. Here we can track which shapes persist
-        and which shapes die during this process. The insight is that if a shape
-        persists for many values of the scale parameter, then that shape must be
-        more essential to the shape of the point cloud. This theory is known as
+        scale parameter take on a range of values and studying the topology of the
+        thickening at every scale. Here we can track which topological features persist
+        and which die during this process. The insight is that if a feature
+        persists for many values of the scale parameter, then that feature must be
+        more essential to topology of the point cloud itself. This theory is known as
         <a href="https://en.wikipedia.org/wiki/Persistent_homology"
         target="_blank"><span class="italic">persistent homology</span></a>, and
         forms the basis for <a href="https://en.wikipedia.org/wiki/Topological_data_analysis"
@@ -60,8 +66,8 @@
 
         <p>The persistence of each shape in a space \(X\) is usually described by
         the <span class="italic">persistence barcodes</span> of \(X\), denoted
-        \(PH(X)\). Essentially, the barcodes track the lifetime of each shape, so
-        one can see which shapes were the most important to the point cloud.</p>
+        \(PH(X)\). Essentially, the barcodes track the lifetime of each topological feature, so
+        one can see which features were the most important to the point cloud itself.</p>
       </section>
 
       <footer class="footer container">
