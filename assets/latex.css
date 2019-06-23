@@ -30,7 +30,6 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -227,15 +226,18 @@ a:visited {
           box-sizing: border-box;
 }
 .container {
-  margin: 0 auto;
+  margin: 0px 100px;
   width: 960px;
 }
 .math {
-  margin: 0 auto;
-  width: 600px;
+  padding-top: 160px;
+  margin: 0px 0px 0px 160px;
+  width: 900px;
 }
 .main {
-  padding-top: 160px
+  padding-top: 160px;
+  margin: 0px auto;
+  width: 500px;
 }
 
 /*
