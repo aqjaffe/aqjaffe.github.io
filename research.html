@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<script>
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+  }
+</script>
+<html>
+  <head>
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG">
+    </script>
+    <link  href="assets/latex.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>AQJ</title>
+  </head>
+
+  <body>
+    <header class= "header"><h1>Research</h1></header>
+    <div class="sidenav">
+      <h4><a href="index.html">Home</a></h4>
+      <h4><a href="assets/cv_AQJ.pdf">CV</a></h4>
+      <h4><a href="research.html">Research</a></h4>
+      <h4><a href="seminar.html">Seminar</a></h4>
+      <h4><a href="teaching.html">Teaching</a></h4>
+      <h4><a href="expository.html">Expository</a></h4>
+    </div>
+
+    <div class="container main">
+
+    <p>Preprints and publications in reverse chronological order:</p>
+
+      <ul>
+        <li class="body">
+          <i>Kantorovich Duality for Some Topologically Degenerate Zero-One Costs</i>
+            with Daniel Raban.
+            In progress (2024+).<br>
+        </li>
+
+        <li class="body">
+          <i>Nearly-Maximal Germ Couplings of L&eacutevy Processes</i>
+            with Yang Chu.
+            In progress (2024+).<br>
+        </li>
+
+        <li class="body">
+          <i>Variance-Constrained Denoising, Gaussian Optimal Transport, and Empirical Bayes</i>
+            with Nikos Ignatiadis and Bodhisattva Sen.
+            In progress (2024+).<br>
+        </li>
+
+        <li class="body">
+          <i>Fr&eacutechet Means in Infinite Dimensions</i>.<br>
+          In progress (2024+).<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetInf');">[abstract]</a>
+        </li> 
+        <li class="abstract" id='abFrechetInf' style='display: none;'>While there exists an emerging probabilistic theory of Fr&eacutechet means in a general "finite-dimensional" setting, there also exist a few notable results in particular "infinite-dimensional" settings of interest.
+          Presently, we introduce a geometric condition for a general infinite-dimensional setting under which one can prove a continuity result that implies several probabilistic limit theorems of interest.
+          We also reduce the moment assumptions from the existing literature to the provably minimal possible.
+          We conclude by proving novel results or strengthening existing results in three applications: metric projections in approximation theory, Wasserstein barycenters in optimal transport, and image processing in pattern theory.
+        </li>
+
+        <li class="body">
+          <i>Large Deviations Principle for Bures-Wasserstein Barycenters</i>
+            with Leonardo Santoro. (2024+).<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abBWLDP');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2409.11384">[arxiv]</a>
+        </li>
+        <li class="abstract" id='abBWLDP' style='display: none;'>We prove the large deviations principle for
+          empirical Bures-Wasserstein barycenters of independent, identically-distributed samples of covariance matrices and covariance operators. As an application, we explore some consequences of our results for the phenomenon of dimension-free concentration of measure for Bures-Wasserstein barycenters. Our theory reveals a novel notion of exponential tilting in the Bures-Wasserstein space, which, in analogy with Crámer's theorem in the Euclidean case, solves the relative entropy projection problem under a constraint on the barycenter. Notably, this method of proof is easy to adapt to other geometric settings of interest; with the same method, we obtain large deviations principles for empirical barycenters in Riemannian manifolds and the univariate Wasserstein space, and we obtain large deviations upper bounds for empirical barycenters in the general multivariate Wasserstein space. In fact, our results are the first known large deviations principles for Fréchet means in any non-linear metric space.
+        </li>
+
+        <li class="body">
+          <i>Strong Consistency for a Class of Adaptive Clustering Procedures</i>.
+          Under review at <b>Annals of Statistics</b> (2024+).<br>
+          <a href="javascript:void(0)" onclick="toggle_visibility('abClustering');">[abstract]</a>
+          <a href="https://arxiv.org/abs/2202.13423">[arxiv]</a>
+        </li>
+        <li class="abstract" id='abClustering' style='display: none;'>We introduce a class of clustering procedures which includes \(k\)-means and \(k\)-medians, as well as variants of these where the number of cluster centers can be chosen adaptively (for example, according to the elbow method) and where the domain of the cluster centers can be chosen adaptively (for example, \(k\)-medoids).
+          In the non-parametric setting and assuming only the finiteness of certain moments, we show that all clustering procedures in this class are strongly consistent under independent, identically-distributed samples.
+          In the adaptive setting, our work provides a strong consistency result that is the first of its kind.
+          In the non-adaptive setting, our work strengthens many existing results in the literature by providing a robust method of proof which allows one to prove further limit theorems.
+        </li>
+
+        <li class="body">
+          <i>Fr&eacutechet Mean Set Estimation in the Hausdorff Metric, via Relaxation</i> with Mo&iumlse Blanchard.
+          To appear in <b>Bernoulli</b> (2024+).<br>
+          <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetStat');">[abstract]</a>
+          <a href="https://arxiv.org/abs/2212.12057">[arxiv]</a>
+        </li>
+          <li class="abstract" id='abFrechetStat' style='display: none;'>This work resolves the following question in non-Euclidean statistics: Is it possible to consistently estimate the Fr&eacutechet mean set of an unknown population distribution, with respect to the Hausdorff metric, when given access to independent identically-distributed samples?
+          Our affirmative answer is based on a careful analysis of the "relaxed empirical Fr&eacutechet mean set estimators" which identify the set of near-minimizers of the empirical Fr&eacutechet functional and where the amount of "relaxation" vanishes as the number of data tends to infinity.
+          Our main theoretical results include exact descriptions of which relaxation rates give weak consistency and which give strong consistency, as well as the construction of a "two-step estimator" which (assuming only the finiteness of certain moments and a mild condition on the metric entropy of the underlying metric space) adaptively finds the fastest possible relaxation rate for strongly consistent estimation.
+          Our main practical result is simply that researchers working with non-Euclidean data in the real world can be better off computing relaxed empirical Fr&eacutechet mean sets rather than unrelaxed empirical Fr&eacutechet mean sets.
+        </li>
+
+        <li class="body">
+          <i>Constructing Maximal Germ Couplings of Brownian Motions with Drift</i> with Sebastian Hummel.
+            <b>Electronic Communications in Probability</b>. 29, 1-11.<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abGermBM');">[abstract]</a>
+            <a href="javascript:void(0)" onclick="toggle_visibility('imgGermBM');">[animation]</a>
+            <a href="https://arxiv.org/abs/2309.16922">[arxiv]</a>
+            <a href="https://projecteuclid.org/journals/electronic-communications-in-probability/volume-29/issue-none/Constructing-maximal-germ-couplings-of-Brownian-motions-with-drift/10.1214/24-ECP592.full">[journal]</a>
+          </li>
+          <li class='abstract' id='imgGermBM' style='display: none;'>
+            <p><img  src="assets/BM_germ.gif" width="400" style="border: 1px solid #000000"></p>
+          </li>
+          <li class="abstract" id='abGermBM' style='display: none;'>Consider all the possible ways of coupling together two Brownian motions with the same starting position but with different drifts onto the same probability space.
+          It is known that there exist couplings which make these processes agree for some random, positive, maximal initial length of time.
+          Presently, we provide an explicit, elementary construction of such couplings.
+        </li>
+  
+        <li class="body">
+          <i>Limit Theorems for Fr&eacutechet Mean Sets</i> with Steve N. Evans.
+          <b>Bernoulli</b>. 30(1), 419-447.<br>
+          <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetLimit');">[abstract]</a>
+          <a href="https://arxiv.org/abs/2012.12859">[arxiv]</a>
+          <a href="https://doi.org/10.3150/23-BEJ1603">[journal]</a>
+        </li>
+        <li class="abstract" id='abFrechetLimit' style='display: none;'>For \(1\le p \le \infty\), the Fr&eacutechet \(p\)-mean of a probability measure on a metric space is an important notion of central tendency that generalizes the usual notions in the real line of mean (\(p=2\)) and median (\(p=1\)).
+        In this work we prove a collection of limit theorems for Fr&eacutechet means and related objects, which, in general, constitute a sequence of random closed sets.
+        On the one hand, we show that many limit theorems (a strong law of large numbers, an ergodic theorem, and a large deviations principle) can be simply descended from analogous theorems on the space of probability measures via purely topological considerations.
+        On the other hand, we provide the first sufficient conditions for the strong law of large numbers to hold in a \(T_2\) topology (in particular, the Fell topology), and we show that this condition is necessary in some special cases.
+        We also discuss statistical and computational implications of the results herein.
+        </li>
+
+        <li class="body">
+          <i>A Strong Duality Principle for Equivalence Couplings and Total Variation</i>.
+          <b>Electronic Journal of Probability</b>. 28, 1-33<br>
+          <a href="javascript:void(0)" onclick="toggle_visibility('abDuality');">[abstract]</a>
+          <a href="https://arxiv.org/abs/2207.14239">[arxiv]</a>
+          <a href="https://projecteuclid.org/journals/electronic-journal-of-probability/volume-28/issue-none/A-strong-duality-principle-for-equivalence-couplings-and-total-variation/10.1214/23-EJP1016.full">[journal]</a>
+        </li>
+        <li class="abstract" id='abDuality' style='display: none;'>We introduce and study a notion of duality for two classes of optimization problems commonly occurring in probability theory.
+        That is, on an abstract measurable space \((\Omega,\mathcal{F})\), we consider pairs \((E,\mathcal{G})\) where \(E\) is an equivalence relation on \(\Omega\) and \(\mathcal{G}\) is a sub-\(\sigma\)-algebra of \(\mathcal{F}\); we say that \((E,\mathcal{G})\) satisfies "strong duality" if \(E\) is \((\mathcal{F}\otimes\mathcal{F})\)-measurable and if for all probability measures \(\mathbb{P},\mathbb{P}'\) on \((\Omega,\mathcal{F})\) we have
+        \[
+          \max_{A\in\mathcal{G}}\vert \mathbb{P}(A)-\mathbb{P}'(A)\vert = \min_{\tilde{\mathbb{P}}\in\Pi(\mathbb{P},\mathbb{P}')}(1-\tilde{\mathbb{P}}(E)),
+        \]
+        where \(\Pi(\mathbb{P},\mathbb{P}')\) denotes the space of couplings of \(\mathbb{P}\) and \(\mathbb{P}'\), and where 
+        "max" and "min" assert that the supremum and infimum are in fact achieved.
+        The results herein give wide sufficient conditions for strong duality to hold, thereby extending a form of Kantorovich duality to a class of cost functions which are irregular from the point of view of topology but regular from the point of view of descriptive set theory.
+        The given conditions recover or strengthen classical results, and they have novel consequences in stochastic calculus, point process theory, and random sequence simulation.
+        </li>
+
+        <li class="body">
+          <i>Virtual Markov Chains</i> with Steve N. Evans.
+          <b>New Zealand Journal of Mathematics (Vaughan Jones Memorial Special Issue)</b>. 52, 511–559.<br/>
+          <a href="javascript:void(0)" onclick="toggle_visibility('abVMC');">[abstract]</a>
+          <a href="https://arxiv.org/abs/2107.14268">[arxiv]</a>
+          <a href="https://nzjmath.org/index.php/NZJMATH/article/view/147">[journal]</a>
+        </li>
+        <li class="abstract" id='abVMC' style='display: none;'>We introduce the space of virtual Markov chains (VMCs) as a projective limit of the spaces of all finite state space Markov chains (MCs), in the same way that the space of virtual permutations is the projective limit of the spaces of all permutations of finite sets. We introduce the notions of virtual initial distribution (VID) and a virtual transition matrix (VTM), and we show that the law of any VMC is uniquely characterized by a pair of a VID and VTM which have to satisfy a certain compatibility condition. Lastly, we study various properties of compact convex sets associated to the theory of VMCs, including that the Birkhoff-von Neumann theorem fails in the virtual setting.</li>
+      </ul><br>
+
+      <!---
+      <div style="height: 100px">
+        <img src="assets/VRPolygonPic.png" width="100" style="float: left;
+          margin: 0px 10px 0px 0px;">
+        <p style="margin: 0px 0px 0px 0px">
+          <b><i>Vietoris-Rips Complexes of Regular Polygons</i></b><br/>
+          With Henry Adams, Samir Chowdhury, and Bonginkosi Sibanda.<br>
+          Final project for Summer@ICERM 2017, supported by NSF Grant No. DMS-1439786.<br>
+          <a href="https://arxiv.org/abs/1807.10971">[arxiv]</a>
+          <a href="VRPolygons/assets/slides.pdf">[slides]</a>
+          <a href="VRPolygons/assets/poster.pdf">[poster]</a>
+          <a href="VRPolygons/index.html">[website]</a>
+        </p>
+      </div>
+      --->
+
+      <footer class="footer container">
+        <small>&copy; Adam Quinn Jaffe 2024</small>
+      </footer>
+    </div>
+  </body>
+</html>
