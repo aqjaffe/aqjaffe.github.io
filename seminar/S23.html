@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <link  href="../assets/latex.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>AQJ</title>
+  </head>
+
+  <body>
+    <header class= "header"><h1>Spring 2023 Seminar</h1></header>
+    <div class="sidenav">
+      <h4><a href="../index.html">Home</a></h4>
+      <h4><a href="../assets/cv_AQJ.pdf">CV</a></h4>
+      <h4><a href="../research.html">Research</a></h4>
+      <h4><a href="../seminar.html">Seminar</a></h4>
+      <h4><a href="../teaching.html">Teaching</a></h4>
+      <h4><a href="../expository.html">Expository</a></h4>
+      <h4><a href="../links.html">Links</a></h4>
+    </div>
+
+    <div class="container main">
+      <p>This is the homepage for the UC Berkeley Student Probability Seminar,
+        a venue for graduate students
+        in the departments of mathematics, statistics, and others to
+        study aspects of modern probability theory.
+        We meet on Wednesdays in Evans 891 from 2:00 PM - 3:00 PM
+      </p>
+
+      <p>
+        Organizers:
+        <a href="https://statistics.berkeley.edu/people/ella-hiesmayr">Ella Hiesmayr</a>
+        and
+        <a href="https://www.stat.berkeley.edu/~aqjaffe/">Adam Quinn Jaffe</a>.
+      </p>
+
+      <p>
+        The topic for this semester's seminar is Stein's method. We will
+        mostly follow this survey article by
+        <a href="https://projecteuclid.org/journals/probability-surveys/volume-8/issue-none/Fundamentals-of-Steins-method/10.1214/11-PS182.full">Ross [R]</a>
+        but we may read more recent papers towards the end of the semester.
+      </p>
+
+      <ul>
+        <li class="title">25 January, Ella Hiesmayr,
+          <b>Introductory talk</b>, R Chapters 1 and 2</li>
+        <li class="body">We will define the operator that characterizes the
+          normal distribution and show how this can be used to express the
+          distance of a distribution to the normal.</li>
+
+        <li class="title">01 February, Adam Quinn Jaffe,
+          <b>Wasserstein bounds for a quantitative CLT</b>, R Chapter 3.1</li>
+        <li class="body">We will do some "Gaussian calculus" to show that the Wasserstein distance between an arbitrary random variable and a Gaussian random variable can be explicitly controlled. In particular, we will show that solutions to a certain "Gaussian ODE" have great regularity. This constitutes the basic tool for Stein's method, and we will see how it can be applied to give a quantitative CLT for sums of independent random variables.</li>
+
+        <li class="title">08 February, Daniel Raban,
+          <b>Wasserstein CLT for sums of locally dependent random variables</b>, R Chapter 3.2</li>
+        <li class="body">We will use the machinery we have developed to generalize our Wasserstein bounds to sums of random variables which have limited dependence. We will give an example of an application to analysis of the number of triangles in Erdõs-Renyi random graphs.</li>
+
+        <li class="title">15 February, Mriganka Basu Roy Chowdhury,
+          <b>Exchangeable pairs</b>, R Chapter 3.3</li>
+        <li class="body">Building on results from previous weeks, I will present the exchangeable pairs formalism for Stein's method. This variant of the method has a "dynamical" flavor to it, and is well suited to analyzing stationary distributions of Markov chains. In addition to proving the core lemmas, I will try to discuss some basic examples illustrating the method.</li>
+
+        <li class="title">22 February, Vilas Weinstein,
+          <b>Size-Bias and Isolated Vertices</b>, R Chapter 3.4</li>
+        <li class="body">Today we will discuss another special case of Stein’s method, involving the “size-biased” version of a random variable. As an application, we will give a quantitative convergence of the number of isolated vertices in an Erdős-Rényi graph to the normal distribution.</li>
+
+        <li class="title">01 March, Karissa Huang,
+          <b>Poisson Approximation and the Chen-Stein Method</b>, R Chapter 4.1</li>
+        <li class="body">In today's talk, we will see how the Stein Method can be adapted to other random variables and metrics. In particular, we will consider bounding the total variation distance between a distribution of interest and the Poisson distribution. The general framework is quite similar as in the Gaussian case; we will define a characterizing operator of the Possion, show that it has a unique solution, and prove some properties of that solution, which will give us the main theorem -- an upper bound on the TV distance. We will then see a simple, illustrative example of how the theorem can be applied.</li>
+
+        <li class="title">08 March, No talk.</li>
+
+        <li class="title">15 March, Zack McNulty,
+          <b>Dependency Neighborhoods and Size Bias in Poisson Approximation</b>, R Chapters 4.2 and 4.3.1</li>
+        <li class="body">In this talk we extend some of the ideas from normal approximation for handling dependency between the random variables to Poisson approximation. In the case of only local dependencies, we have seen how dependency neighborhoods can be used to control the error in the approximation. In the case of more global dependencies, we again rely on the notion of size bias to get suitable bounds. Lastly, we cover a simplification of the size bias to procedure in the case our random variables of interest have a suitable increasing property.</li>
+
+        <li class="title">22 March, Yang Chu,
+          <b>Implicit and decreasing size-bias couplings</b>, R Chapters 4.3.3 and 4.3.4</li>
+        <li class="body">We will continue our discussion on size-bias coupling. In particular we can show there exists a size-bias coupling without constructing it explicitly by using monotonicity. This applies to examples like subgraph counts and large degree vertices. We will also discuss decreasing size-bias couplings with different applications.</li>
+
+        <li class="title">29 March, No talk.</li>
+
+        <li class="title">05 April, Ella Hiesmayr,
+          <b>Exchangeable pairs for the Poisson Approximation and other topics</b>, R Chapters 4.4, 5, and 6</li>
+        <li class="body">Today we will look at the method of exchangeable pairs for the Poisson approximation, and see that it is simpler than in the case of the normal distribution. We will then apply this result to the number of fixed points of uniform random permutations. Subsequently we will cover an example where we can use the Poisson approximation to study distributions that are not Poisson themselves. Finally we will glance over Stein's method for the geometric and the exponential distribution.</li>
+
+        <li class="title">12 April, Daniel Raban,
+          <b>Concentration of measure using exchangeable pairs</b>, R Chapter 7.1</li>
+        <li class="body">We will use exchangeable pairs to get bounds on tail probabilities for distributions. We'll then apply this technique to prove a "combinatorial CLT" for random permutations of 2d arrays.</li>
+
+        <li class="title">19 April, Vilas Winstein,
+          <b>Concentration of Magnetization in the Curie-Weiss Model</b>, R Chapter 7.2</li>
+        <li class="body">The Curie-Weiss model is a mean-field model of a magnet. We will discuss this model and how its behavior changes for different temperatures and different external magnetic fields. Then we will prove a concentration theorem which (almost) implies that the magnet will be disordered at high temperatures and ordered at low temperatures.</li>
+
+        <li class="title">26 April, Zack McNulty,
+          <b>Applications of Sized Bias Coupling to Concentration</b>, R Chapter 7.3, and <a href="https://arxiv.org/abs/1308.2729">Arratia, Goldstein, Kochman</a></li>
+        <li class="body">TWe will discuss how sized bias coupling, a technique we previously introduced in studying Poisson and Normal approximation, can be used to derive concentration results. We then will apply this theory to two examples: one involving heads runs and another related to ordered subsequences of random permutations.</li>
+
+        <li class="title">03 May, Mriganka Basu Roy Chowdhury,
+          <b>Stein’s method for couplings</b>, <a href="https://arxiv.org/pdf/math/0604352.pdf">Chatterjee</a></li>
+        <li class="body">For the final talk of this semester, we will look at a different kind of Stein's method -- one that allows us to construct couplings on the same space with exponential concentration of their difference. This result is due to Chatterjee '07, but the (semi)proof I will present will involve going back to the original motivation for Stein's method. If time permits, I plan to also discuss some interesting examples</li>
+      </ul><br>
+
+      <p>Thanks for the great semester, everyone!</p>
+    </div>
+  </body>
+</html>
