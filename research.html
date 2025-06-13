@@ -31,13 +31,31 @@
 
       <ul>
         <li class="body">
-          <i>Minimal moment assumptions for \(k\)-means clustering</i> with Mo&iumlse Blanchard
-            and Nikita Zhivotovskiy (in progress)
+          <i>Consistency and inconsistency in \(k\)-means clustering</i> with Mo&iumlse Blanchard
+            and Nikita Zhivotovskiy. In progress.<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('imgKMeansConsistency');">[animation]</a>
+        </li>
+        <li class="abstract" id='abKMeansConsistency' style='display: none;'>
+          ...
+        </li>
+        <li class='abstract' id='imgKMeansConsistency' style='display: none;'>
+          <p><img  src="assets/clustering.gif" width="400" style="border: 1px solid #000000"></p>
         </li>
 
         <li class="body">
           <i>Constrained denoising, empirical Bayes, and optimal transport</i> with Nikolaos
-            Ignatiadis and Bodhisattva Sen. (in progress)
+            Ignatiadis and Bodhisattva Sen. Working paper.<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abDenoisingEBOT');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2506.09986">[arxiv]</a>
+            <a href="https://github.com/aqjaffe/constrained-denoising-EB-OT">[code]</a>
+        </li>
+        <li class="abstract" id='abDenoisingEBOT' style='display: none;'>
+          In the statistical problem of denoising, Bayes and empirical Bayes methods can "overshrink" their output relative to the latent variables of interest. This work is focused on constrained denoising problems which mitigate such phenomena. At the oracle level, i.e., when the latent variable
+          distribution is assumed known, we apply tools from the theory of optimal transport to characterize
+          the solution to (i) variance-constrained, (ii) distribution-constrained, and (iii) general-constrained denoising problems. At the empirical level, i.e., when the latent variable distribution is not
+          known, we use empirical Bayes methodology to estimate these oracle denoisers. Our approach is
+          modular, and transforms any suitable (unconstrained) empirical Bayes denoiser into a constrained empirical Bayes denoiser. We prove explicit rates of convergence for our proposed methodologies,
+          which both extend and sharpen existing asymptotic results that have previously considered only variance constraints. We apply our methodology in two applications: one in astronomy concerning the relative chemical abundances in a large catalog of red-clump stars, and one in baseball concerning minor- and major league batting skill for rookie players.
         </li>
 
         <li class="body">
@@ -87,13 +105,25 @@
           <b>Bernoulli</b>. 31(1), 432-456.<br>
           <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetStat');">[abstract]</a>
           <a href="https://arxiv.org/abs/2212.12057">[arxiv]</a>
+          <a href="https://github.com/moiseb/Relaxed_Frechet_Sets">[code]</a>
           <a href="https://projecteuclid.org/journals/bernoulli/volume-31/issue-1/Fr%c3%a9chet-mean-set-estimation-in-the-Hausdorff-metric-via-relaxation/10.3150/24-BEJ1734.full"
           >[journal]</a>
         </li>
-          <li class="abstract" id='abFrechetStat' style='display: none;'>This work resolves the following question in non-Euclidean statistics: Is it possible to consistently estimate the Fr&eacutechet mean set of an unknown population distribution, with respect to the Hausdorff metric, when given access to independent identically-distributed samples?
-          Our affirmative answer is based on a careful analysis of the "relaxed empirical Fr&eacutechet mean set estimators" which identify the set of near-minimizers of the empirical Fr&eacutechet functional and where the amount of "relaxation" vanishes as the number of data tends to infinity.
-          Our main theoretical results include exact descriptions of which relaxation rates give weak consistency and which give strong consistency, as well as the construction of a "two-step estimator" which (assuming only the finiteness of certain moments and a mild condition on the metric entropy of the underlying metric space) adaptively finds the fastest possible relaxation rate for strongly consistent estimation.
-          Our main practical result is simply that researchers working with non-Euclidean data in the real world can be better off computing relaxed empirical Fr&eacutechet mean sets rather than unrelaxed empirical Fr&eacutechet mean sets.
+        <li class="abstract" id='abFrechetStat' style='display: none;'>T
+          This work resolves the following question in non-Euclidean statistics:
+          Is it possible to consistently estimate the Fr&eacutechet mean set of an unknown population
+          distribution, with respect to the Hausdorff metric, when given access to independent
+          identically-distributed samples? Our affirmative answer is based on a careful analysis of
+          the "relaxed empirical Fr&eacutechet mean set estimators" which identify the set of near-minimizers
+          of the empirical Fr&eacutechet functional and where the amount of "relaxation" vanishes as the
+          number of data tends to infinity. On the theoretical side, our results include exact descriptions
+          of which relaxation rates give weak consistency and which give strong consistency, as well as
+          a description of an estimator which (assuming only the finiteness of certain moments and a mild condition on the metric entropy of the underlying metric space) adaptively finds the fastest possible
+          relaxation rate for strongly consistent estimation. On the applied side, we consider the
+          problem of estimating the set of Fermat-Weber points of an unknown distribution in the
+          space of equidistant trees endowed with the tropical projective metric; in this setting,
+          we provide an algorithm that provably implements our adaptive estimator, and we apply this
+          method to real phylogenetic data.
         </li>
 
         <li class="body">
