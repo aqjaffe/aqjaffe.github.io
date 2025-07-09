@@ -32,14 +32,27 @@
       <ul>
         <li class="body">
           <i>Consistency and inconsistency in \(k\)-means clustering</i> with Mo&iumlse Blanchard
-            and Nikita Zhivotovskiy. In progress.<br>
+            and Nikita Zhivotovskiy. Working paper.<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abKMeansConsistency');">[abstract]</a>
             <a href="javascript:void(0)" onclick="toggle_visibility('imgKMeansConsistency');">[animation]</a>
+            <a href="https://arxiv.org/abs/2507.06226">[arxiv]</a>
         </li>
         <li class="abstract" id='abKMeansConsistency' style='display: none;'>
-          ...
+            A celebrated result of Pollard proves asymptotic consistency for \(k\)-means clustering when the
+            population distribution has finite variance. In this work, we point out that the population-level
+            \(k\)-means clustering problem is, in fact, well-posed under the weaker assumption of a finite
+            expectation, and we investigate whether some form of asymptotic consistency holds in this setting.
+            As we illustrate in a variety of negative results, the complete story is quite subtle; for example, 
+            the empirical \(k\)-means cluster centers may fail to converge even if there exists a unique set of
+            population \(k\)-means cluster centers. A detailed analysis of our negative results reveals that
+            inconsistency arises because of an extreme form of cluster imbalance, whereby the presence of
+            outlying samples leads to some empirical \(k\)-means clusters possessing very few points. We then
+            give a collection of positive results which show that some forms of asymptotic consistency, under
+            only the assumption of finite expectation, may be recovered by imposing some a priori degree of
+            balance among the empirical \(k\)-means clusters.
         </li>
         <li class='abstract' id='imgKMeansConsistency' style='display: none;'>
-          <p><img  src="assets/clustering.gif" width="400" style="border: 1px solid #000000"></p>
+          <p><img  src="assets/clustering_anim.gif" width="400" style="border: 1px solid #000000"></p>
         </li>
 
         <li class="body">
@@ -59,6 +72,16 @@
         </li>
 
         <li class="body">
+          <i>Large deviations principle for Bures-Wasserstein barycenters</i>
+            with Leonardo Santoro. Working paper.<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abBWLDP');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2409.11384">[arxiv]</a>
+        </li>
+        <li class="abstract" id='abBWLDP' style='display: none;'>We prove the large deviations principle for
+          empirical Bures-Wasserstein barycenters of independent, identically-distributed samples of covariance matrices and covariance operators. As an application, we explore some consequences of our results for the phenomenon of dimension-free concentration of measure for Bures-Wasserstein barycenters. Our theory reveals a novel notion of exponential tilting in the Bures-Wasserstein space, which, in analogy with Cramér's theorem in the Euclidean case, solves the relative entropy projection problem under a constraint on the barycenter. Notably, this method of proof is easy to adapt to other geometric settings of interest; with the same method, we obtain large deviations principles for empirical barycenters in Riemannian manifolds and the univariate Wasserstein space, and we obtain large deviations upper bounds for empirical barycenters in the general multivariate Wasserstein space. In fact, our results are the first known large deviations principles for Fréchet means in any non-linear metric space.
+        </li>
+
+        <li class="body">
           <i>Fr&eacutechet means in infinite dimensions</i>.
           Under review at <b>Journal of Functional Analysis</b> (2025+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetInf');">[abstract]</a>
@@ -69,17 +92,6 @@
           Presently, show that a natural setting for the study of probabilistic aspects of Fr&eacutechet means is that of metric spaces which admit a suitably powerful notion of "weak convergence".
           This allows us to recover, strengthen, and generalize virtually all known asymptotic theory for Fr&eacutechet means; in particular, we expand the possible geometric settings where such theorems can be applied, we reduce the moment assumptions to the provably minimal possible, and we completely remove assumption about uniquenesss.
           We also analyze many examples.
-        </li>
-
-        <li class="body">
-          <i>Large deviations principle for Bures-Wasserstein barycenters</i>
-            with Leonardo Santoro.
-            Under review at <b>Probability Theory and Related Fields</b> (2025+).<br>
-            <a href="javascript:void(0)" onclick="toggle_visibility('abBWLDP');">[abstract]</a>
-            <a href="https://arxiv.org/abs/2409.11384">[arxiv]</a>
-        </li>
-        <li class="abstract" id='abBWLDP' style='display: none;'>We prove the large deviations principle for
-          empirical Bures-Wasserstein barycenters of independent, identically-distributed samples of covariance matrices and covariance operators. As an application, we explore some consequences of our results for the phenomenon of dimension-free concentration of measure for Bures-Wasserstein barycenters. Our theory reveals a novel notion of exponential tilting in the Bures-Wasserstein space, which, in analogy with Crámer's theorem in the Euclidean case, solves the relative entropy projection problem under a constraint on the barycenter. Notably, this method of proof is easy to adapt to other geometric settings of interest; with the same method, we obtain large deviations principles for empirical barycenters in Riemannian manifolds and the univariate Wasserstein space, and we obtain large deviations upper bounds for empirical barycenters in the general multivariate Wasserstein space. In fact, our results are the first known large deviations principles for Fréchet means in any non-linear metric space.
         </li>
 
         <li class="body">
