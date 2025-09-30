@@ -180,8 +180,26 @@ h3, h4, h5, p {
 /* a:link {
   color: black;
 } */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
 a:visited {
   color: blue;
+  text-decoration: none;
+}
+
+
+.body a {
+  color: blue;
+
+}
+
+.body a {
+  color: blue;
+  text-decoration: none;
+
 }
 
 .sidenav a:visited {
