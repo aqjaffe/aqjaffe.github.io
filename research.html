@@ -31,7 +31,18 @@
 
       <ul>
         <li class="body">
-          <i>Wasserstein-Cram&eacuter-Rao Theory of Unbiased Estimation</i>
+          <i>Nonparametric Riemannian empirical Bayes, denoising measurements on manifolds</i> with Leonardo Santoro and Bodhisattva Sen<br>
+            Submitted (2025+).<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abNPREB');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2606.11183">[arxiv]</a>
+        </li>
+        <li class="abstract" id='abNPREB' style='display: none;'>
+            We initiate the study of nonparametric empirical Bayes denoising methods in the setting where both the latent variables and their measurements lie on a compact Riemannian manifold, and where the likelihood is a Riemannian Gaussian distribution. Our starting point is a novel Tweedie-Eddington formula for Riemannian Gaussian mixture models which identifies a certain surrogate oracle denoiser in terms of the marginal distribution of the measurements; it avoids the explicit computation of the posterior Fr&eacute;chet mean (as required by the Bayes denoiser) via a first-order approximation, hence we refer to it as the "tangential" Bayes denoiser. We show that this surrogate oracle achieves nearly the Bayes risk in a low-noise regime, we construct a fully data-driven approximation of it using the spectral theory of the Laplace-Beltrami operator, and we establish finite-sample rates of convergence for the distance between the the surrogate oracle and its approximation. Contrasting the nearly-parametric rates from the Euclidean setting, the rates in the Riemannian setting are slower due to the singularities of the Riemannian Gaussian density at the cut locus of its Fr&eacute;chet mean; in the special case of the circle we establish matching lower bounds which show that our proposed denoiser is minimax-optimal, and that the denoising problem exhibits a genuinely nonparametric rate of convergence. Our theory and simulations reveal that pooling information across different measurements&mdash;namely, by shrinking towards high-density regions and stretching away from low-density regions&mdash;can substantially outperform the na&iuml;ve denoiser that treats each measurement separately. Lastly, we implement our methodology in two scientific applications: in astronomy, the sphere-valued problem of denoising the locations of gamma ray bursts; in structural biology, the torus-valued problem of denoising pairs of torsion angles of adjacent amino acids in a protein (i.e., the Ramachandran plot).
+        </li>
+
+
+      <li class="body">
+          <i>Wasserstein-Cram&eacuter-Rao theory of unbiased estimation</i>
             with Nicol&aacutes Garc&iacutea Trillos and Bodhisattva Sen<br>
             Submitted (2025+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abWCR');">[abstract]</a>
@@ -57,6 +68,34 @@
         </li>
 
         <li class="body">
+          <i>Constrained denoising, empirical Bayes, and optimal transport</i> with Nikolaos
+            Ignatiadis and Bodhisattva Sen.<br>
+            Submitted (2025+).<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abDenoisingEBOT');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2506.09986">[arxiv]</a>
+            <a href="https://github.com/aqjaffe/constrained-denoising-EB-OT">[code]</a>
+        </li>
+        <li class="abstract" id='abDenoisingEBOT' style='display: none;'>
+          In the statistical problem of denoising, Bayes and empirical Bayes methods can "overshrink" their output relative to the latent variables of interest. This work is focused on constrained denoising problems which mitigate such phenomena. At the oracle level, i.e., when the latent variable
+          distribution is assumed known, we apply tools from the theory of optimal transport to characterize
+          the solution to (i) variance-constrained, (ii) distribution-constrained, and (iii) general-constrained denoising problems. At the empirical level, i.e., when the latent variable distribution is not
+          known, we use empirical Bayes methodology to estimate these oracle denoisers. Our approach is
+          modular, and transforms any suitable (unconstrained) empirical Bayes denoiser into a constrained empirical Bayes denoiser. We prove explicit rates of convergence for our proposed methodologies,
+          which both extend and sharpen existing asymptotic results that have previously considered only variance constraints. We apply our methodology in two applications: one in astronomy concerning the relative chemical abundances in a large catalog of red-clump stars, and one in baseball concerning minor- and major league batting skill for rookie players.
+        </li>
+
+      <li class="body">
+          <i>Large deviations principle for Bures-Wasserstein barycenters</i>
+            with Leonardo Santoro.<br>
+            Submitted (2025+).<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abBWLDP');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2409.11384">[arxiv]</a>
+        </li>
+        <li class="abstract" id='abBWLDP' style='display: none;'>We prove the large deviations principle for
+          empirical Bures-Wasserstein barycenters of independent, identically-distributed samples of covariance matrices and covariance operators. As an application, we explore some consequences of our results for the phenomenon of dimension-free concentration of measure for Bures-Wasserstein barycenters. Our theory reveals a novel notion of exponential tilting in the Bures-Wasserstein space, which, in analogy with Cramér's theorem in the Euclidean case, solves the relative entropy projection problem under a constraint on the barycenter. Notably, this method of proof is easy to adapt to other geometric settings of interest; with the same method, we obtain large deviations principles for empirical barycenters in Riemannian manifolds and the univariate Wasserstein space, and we obtain large deviations upper bounds for empirical barycenters in the general multivariate Wasserstein space. In fact, our results are the first known large deviations principles for Fr&eacute;chet means in any non-linear metric space.
+        </li>
+
+      <li class="body">
           <i>Consistency and inconsistency in \(k\)-means clustering</i> with Mo&iumlse Blanchard
             and Nikita Zhivotovskiy.<br>
             Submitted (2025+).<br>
@@ -82,47 +121,16 @@
           <p><img  src="assets/clustering_anim.gif" width="400" style="border: 1px solid #000000"></p>
         </li>
 
-        <li class="body">
-          <i>Constrained denoising, empirical Bayes, and optimal transport</i> with Nikolaos
-            Ignatiadis and Bodhisattva Sen.<br>
+      <li class="body">
+          <i>Fr&eacute;chet means in infinite dimensions</i>.<br>
             Submitted (2025+).<br>
-            <a href="javascript:void(0)" onclick="toggle_visibility('abDenoisingEBOT');">[abstract]</a>
-            <a href="https://arxiv.org/abs/2506.09986">[arxiv]</a>
-            <a href="https://github.com/aqjaffe/constrained-denoising-EB-OT">[code]</a>
-        </li>
-        <li class="abstract" id='abDenoisingEBOT' style='display: none;'>
-          In the statistical problem of denoising, Bayes and empirical Bayes methods can "overshrink" their output relative to the latent variables of interest. This work is focused on constrained denoising problems which mitigate such phenomena. At the oracle level, i.e., when the latent variable
-          distribution is assumed known, we apply tools from the theory of optimal transport to characterize
-          the solution to (i) variance-constrained, (ii) distribution-constrained, and (iii) general-constrained denoising problems. At the empirical level, i.e., when the latent variable distribution is not
-          known, we use empirical Bayes methodology to estimate these oracle denoisers. Our approach is
-          modular, and transforms any suitable (unconstrained) empirical Bayes denoiser into a constrained empirical Bayes denoiser. We prove explicit rates of convergence for our proposed methodologies,
-          which both extend and sharpen existing asymptotic results that have previously considered only variance constraints. We apply our methodology in two applications: one in astronomy concerning the relative chemical abundances in a large catalog of red-clump stars, and one in baseball concerning minor- and major league batting skill for rookie players.
-        </li>
-
-        <li class="body">
-          <i>Large deviations principle for Bures-Wasserstein barycenters</i>
-            with Leonardo Santoro.<br>
-            Submitted (2025+).<br>
-            <a href="javascript:void(0)" onclick="toggle_visibility('abBWLDP');">[abstract]</a>
-            <a href="https://arxiv.org/abs/2409.11384">[arxiv]</a>
-        </li>
-        <li class="abstract" id='abBWLDP' style='display: none;'>We prove the large deviations principle for
-          empirical Bures-Wasserstein barycenters of independent, identically-distributed samples of covariance matrices and covariance operators. As an application, we explore some consequences of our results for the phenomenon of dimension-free concentration of measure for Bures-Wasserstein barycenters. Our theory reveals a novel notion of exponential tilting in the Bures-Wasserstein space, which, in analogy with Cramér's theorem in the Euclidean case, solves the relative entropy projection problem under a constraint on the barycenter. Notably, this method of proof is easy to adapt to other geometric settings of interest; with the same method, we obtain large deviations principles for empirical barycenters in Riemannian manifolds and the univariate Wasserstein space, and we obtain large deviations upper bounds for empirical barycenters in the general multivariate Wasserstein space. In fact, our results are the first known large deviations principles for Fréchet means in any non-linear metric space.
-        </li>
-
-        <li class="body">
-          <i>Fr&eacutechet means in infinite dimensions</i>.
-          Submitted (2025+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetInf');">[abstract]</a>
             <a href="https://arxiv.org/abs/2410.17214">[arxiv]</a>
         </li> 
         <li class="abstract" id='abFrechetInf' style='display: none;'>
-          While there exists a well-developed asymptotic theory of Fr&eacutechet means of random variables taking values in a general "finite-dimensional" metric space, there are only a few known results in which the random variables can take values in an ``infinite-dimensional'' metric space.
-          Presently, show that a natural setting for the study of probabilistic aspects of Fr&eacutechet means is that of metric spaces which admit a suitably powerful notion of "weak convergence".
-          This allows us to recover, strengthen, and generalize virtually all known asymptotic theory for Fr&eacutechet means; in particular, we expand the possible geometric settings where such theorems can be applied, we reduce the moment assumptions to the provably minimal possible, and we completely remove assumption about uniquenesss.
-          We also analyze many examples.
+          While there exists a well-developed asymptotic theory of Fr&eacute;chet means of random variables taking values in a general "finite-dimensional" metric space, there are only a few known results in which the random variables can take values in an "infinite-dimensional" metric space. Presently, we develop a general asymptotic theory of Fr&eacute;chet means in some infinite-dimensional metric spaces, which allows us to recover, strengthen, and generalize most existing results; in particular, we develop novel asymptotic theory for Fr&eacute;chet means in some infinite-dimensional metric spaces from statistical shape analysis. The core of the proof is a novel notion of weak convergence in general metric spaces for which the results can be proven via calculus of variations.
         </li>
-      </ul>
+        </ul>
 
       <br><br>
       <p><b>Publications</b></p>
