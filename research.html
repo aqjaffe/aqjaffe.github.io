@@ -31,8 +31,35 @@
 
       <ul>
         <li class="body">
+          <i>Optimal tradeoffs between variance and sensitivity, via Hellinger–Kantorovich geometry</i> with Congwei Yang, Nicol&aacutes Garc&iacutea Trillos, and Bodhisattva Sen.<br>
+            In progress (2026+)<br>
+          </li>
+
+        <li class="body">
+          <i>Total variation information geometry and robust statistics</i> with Dohyeong Ki and Bodhisattva Sen.<br>
+            In progress (2026+)<br>
+          </li>
+
+        <li class="body">
+          <i>Phylogenetic inference and the stickiness of Fr&eacute;chet means, via precise asymptotics of an embedded random walk</i>.<br>
+            In progress (2026+)<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abSticky');">[abstract]</a>
+            <a href="javascript:void(0)" onclick="toggle_visibility('imgSticky');">[animation]</a>
+          </li>
+          <li class='abstract' id='imgSticky' style='display: none;'>
+            <p><img  src="assets/stickiness.gif" width="400" style="border: 1px solid #000000"></p>
+          </li>
+          <li class="abstract" id='abSticky' style='display: none;'>
+            A well-known phenomenon in statistical analyses of populations of phylogenetic trees in the Billera-Holmes-Vogtmann space is that the topology of the Fr&eacute;chet mean tree can contain multifurcations (i.e., internal nodes with more than two children), which raises the practical question of whether this reflects a population-level branching structure (hard polytomy) or merely sampling variability in the data (soft polytomy).
+            This is an instance of the more general phenomenon of ``stickiness'' in non-Euclidean statistics, whereby the sample Fr&eacute;chet mean in certain non-positively curved stratified spaces becomes permanently trapped in a lower-dimensional stratum.
+            In this work, we identify a particular multidimensional random walk embedded within the Fr&eacute;chet mean process, and we show that the time at which stickiness occurs coincides with the largest last-passage time above zero of the coordinates of this random walk.    
+            Using this representation, we develop a fully nonparametric procedure for estimating the probability that trifurcations in a sample Fr&eacute;chet mean tree will eventually bifurcate if more observations are collected.
+            Lastly, we apply our methodology to a problem in phylogenetics where we consider whether an observed trifurcation in the species tree of primates, glires, and tree shrews is genuinely trifurcated at the population-level.
+        </li>
+
+        <li class="body">
           <i>Nonparametric Riemannian empirical Bayes, denoising measurements on manifolds</i> with Leonardo Santoro and Bodhisattva Sen<br>
-            Submitted (2025+).<br>
+            Submitted (2026+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abNPREB');">[abstract]</a>
             <a href="https://arxiv.org/abs/2606.11183">[arxiv]</a>
         </li>
@@ -44,7 +71,7 @@
       <li class="body">
           <i>Wasserstein-Cram&eacuter-Rao theory of unbiased estimation</i>
             with Nicol&aacutes Garc&iacutea Trillos and Bodhisattva Sen<br>
-            Submitted (2025+).<br>
+            Submitted (2026+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abWCR');">[abstract]</a>
             <a href="https://arxiv.org/abs/2511.07414">[arxiv]</a>
         </li>
@@ -53,9 +80,9 @@
         </li>
 
         <li class="body">
-          <i>Coupling theory, optimal transport, and Strassen's theorem beyond regular orders</i>
+          <i>Coupling theory, optimal transport, and Strassen's theorem for eventual domination</i>
             with Daniel Raban.<br>
-            Submitted (2025+).<br>
+            Submitted (2026+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abStrassen');">[abstract]</a>
             <a href="https://arxiv.org/abs/2509.21616">[arxiv]</a>
         </li>
@@ -70,24 +97,24 @@
         <li class="body">
           <i>Constrained denoising, empirical Bayes, and optimal transport</i> with Nikolaos
             Ignatiadis and Bodhisattva Sen.<br>
-            Submitted (2025+).<br>
+            Submitted (2026+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abDenoisingEBOT');">[abstract]</a>
             <a href="https://arxiv.org/abs/2506.09986">[arxiv]</a>
             <a href="https://github.com/aqjaffe/constrained-denoising-EB-OT">[code]</a>
         </li>
         <li class="abstract" id='abDenoisingEBOT' style='display: none;'>
-          In the statistical problem of denoising, Bayes and empirical Bayes methods can "overshrink" their output relative to the latent variables of interest. This work is focused on constrained denoising problems which mitigate such phenomena. At the oracle level, i.e., when the latent variable
-          distribution is assumed known, we apply tools from the theory of optimal transport to characterize
-          the solution to (i) variance-constrained, (ii) distribution-constrained, and (iii) general-constrained denoising problems. At the empirical level, i.e., when the latent variable distribution is not
-          known, we use empirical Bayes methodology to estimate these oracle denoisers. Our approach is
-          modular, and transforms any suitable (unconstrained) empirical Bayes denoiser into a constrained empirical Bayes denoiser. We prove explicit rates of convergence for our proposed methodologies,
-          which both extend and sharpen existing asymptotic results that have previously considered only variance constraints. We apply our methodology in two applications: one in astronomy concerning the relative chemical abundances in a large catalog of red-clump stars, and one in baseball concerning minor- and major league batting skill for rookie players.
+          In latent variables models, two important goals are denoising and deconvolution: denoising aims to estimate the latent variables, whereas deconvolution aims to estimate the distribution of the latent variables.
+          As has been recognized in the literature over the last century, these two goals are fundamentally in tension, since denoising yields a poor estimate of the distribution of the latent variables due to shrinkage, and deconvolution yields a distribution-valued estimate that carries no unit-specific information.
+          In this paper, we provide a systematic study of denoisers, and empirical Bayes approximations thereof, which attain optimal denoising error subject to the constraint that the distribution of the denoised data matches, in some sense, the distribution of the latent variables.
+          Our insight is that optimal transport allows practitioners to navigate the tension between denoising and deconvolution.
+          More precisely, we propose a modular methodology that combines any suitable unconstrained empirical Bayes denoiser (arising, e.g., via $F$-modeling, $G$-modeling, conjugate-parametric models) with any suitable information about the distribution of the latent variables (e.g., its moments, support, or an approximation of the entire distribution via deconvolution) into a single denoised data set.
+          We prove explicit rates of convergence for our proposed methodologies, and we apply the resulting methods in applications in astronomy, baseball analytics, and marketing.
         </li>
 
       <li class="body">
           <i>Large deviations principle for Bures-Wasserstein barycenters</i>
             with Leonardo Santoro.<br>
-            Submitted (2025+).<br>
+            Submitted (2026+).<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abBWLDP');">[abstract]</a>
             <a href="https://arxiv.org/abs/2409.11384">[arxiv]</a>
         </li>
@@ -96,12 +123,28 @@
         </li>
 
       <li class="body">
+          <i>Fr&eacute;chet means in infinite dimensions</i>.<br>
+            Submitted (2026+).<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetInf');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2410.17214">[arxiv]</a>
+        </li> 
+        <li class="abstract" id='abFrechetInf' style='display: none;'>
+          While there exists a well-developed asymptotic theory of Fr&eacute;chet means of random variables taking values in a general "finite-dimensional" metric space, there are only a few known results in which the random variables can take values in an "infinite-dimensional" metric space. Presently, we develop a general asymptotic theory of Fr&eacute;chet means in some infinite-dimensional metric spaces, which allows us to recover, strengthen, and generalize most existing results; in particular, we develop novel asymptotic theory for Fr&eacute;chet means in some infinite-dimensional metric spaces from statistical shape analysis. The core of the proof is a novel notion of weak convergence in general metric spaces for which the results can be proven via calculus of variations.
+        </li>
+        </ul>
+
+      <br><br>
+      <p><b>Publications</b></p>
+
+      <li class="body">
           <i>Consistency and inconsistency in \(k\)-means clustering</i> with Mo&iumlse Blanchard
             and Nikita Zhivotovskiy.<br>
-            Submitted (2025+).<br>
+            <b>Electronic Journal of Statistics</b>. 20(2): 3291-3334.<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abKMeansConsistency');">[abstract]</a>
             <a href="javascript:void(0)" onclick="toggle_visibility('imgKMeansConsistency');">[animation]</a>
             <a href="https://arxiv.org/abs/2507.06226">[arxiv]</a>
+            <a href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-20/issue-2/Consistency-and-inconsistency-in-k-means-clustering/10.1214/26-EJS2557.full"
+          >[journal]</a>
         </li>
         <li class="abstract" id='abKMeansConsistency' style='display: none;'>
             A celebrated result of Pollard proves asymptotic consistency for \(k\)-means clustering when the
@@ -120,20 +163,6 @@
         <li class='abstract' id='imgKMeansConsistency' style='display: none;'>
           <p><img  src="assets/clustering_anim.gif" width="400" style="border: 1px solid #000000"></p>
         </li>
-
-      <li class="body">
-          <i>Fr&eacute;chet means in infinite dimensions</i>.<br>
-            Submitted (2025+).<br>
-            <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetInf');">[abstract]</a>
-            <a href="https://arxiv.org/abs/2410.17214">[arxiv]</a>
-        </li> 
-        <li class="abstract" id='abFrechetInf' style='display: none;'>
-          While there exists a well-developed asymptotic theory of Fr&eacute;chet means of random variables taking values in a general "finite-dimensional" metric space, there are only a few known results in which the random variables can take values in an "infinite-dimensional" metric space. Presently, we develop a general asymptotic theory of Fr&eacute;chet means in some infinite-dimensional metric spaces, which allows us to recover, strengthen, and generalize most existing results; in particular, we develop novel asymptotic theory for Fr&eacute;chet means in some infinite-dimensional metric spaces from statistical shape analysis. The core of the proof is a novel notion of weak convergence in general metric spaces for which the results can be proven via calculus of variations.
-        </li>
-        </ul>
-
-      <br><br>
-      <p><b>Publications</b></p>
 
       <ul>
         <li class="body">
