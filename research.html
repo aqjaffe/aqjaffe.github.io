@@ -27,25 +27,24 @@
 
     <div class="container main">
 
-    <p><b>Preprints</b></p>
+    <p><b>Working papers</b></p>
 
       <ul>
         <li class="body">
           <i>Optimal tradeoffs between variance and sensitivity, via Hellinger–Kantorovich geometry</i> with Congwei Yang, Nicol&aacutes Garc&iacutea Trillos, and Bodhisattva Sen.<br>
-            In progress (2026+)<br>
           </li>
 
         <li class="body">
           <i>Total variation information geometry and robust statistics</i> with Dohyeong Ki and Bodhisattva Sen.<br>
-            In progress (2026+)<br>
           </li>
 
         <li class="body">
           <i>Phylogenetic inference and the stickiness of Fr&eacute;chet means, via precise asymptotics of an embedded random walk</i>.<br>
-            In progress (2026+)<br>
+            Submitted (2026+)<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abSticky');">[abstract]</a>
             <a href="javascript:void(0)" onclick="toggle_visibility('imgSticky');">[animation]</a>
             <a href="https://arxiv.org/abs/2609.24816">[arxiv]</a>
+            <a href="https://github.com/aqjaffe/PhyloStickyRW">[code]</a>
           </li>
           <li class='abstract' id='imgSticky' style='display: none;'>
             <p><img  src="assets/stickiness.gif" width="400" style="border: 1px solid #000000"></p>
@@ -56,28 +55,6 @@
             In this work, we identify a particular multidimensional random walk embedded within the Fr&eacute;chet mean process, and we show that the time at which stickiness occurs coincides with the largest last-passage time above zero of the coordinates of this random walk.    
             Using this representation, we develop a fully nonparametric procedure for estimating the probability that trifurcations in a sample Fr&eacute;chet mean tree will eventually bifurcate if more observations are collected.
             Lastly, we apply our methodology to a problem in phylogenetics where we consider whether an observed trifurcation in the species tree of primates, glires, and tree shrews is genuinely trifurcated at the population-level.
-        </li>
-
-        <li class="body">
-          <i>Nonparametric Riemannian empirical Bayes, denoising measurements on manifolds</i> with Leonardo Santoro and Bodhisattva Sen<br>
-            Submitted (2026+).<br>
-            <a href="javascript:void(0)" onclick="toggle_visibility('abNPREB');">[abstract]</a>
-            <a href="https://arxiv.org/abs/2606.11183">[arxiv]</a>
-        </li>
-        <li class="abstract" id='abNPREB' style='display: none;'>
-            We initiate the study of nonparametric empirical Bayes denoising methods in the setting where both the latent variables and their measurements lie on a compact Riemannian manifold, and where the likelihood is a Riemannian Gaussian distribution. Our starting point is a novel Tweedie-Eddington formula for Riemannian Gaussian mixture models which identifies a certain surrogate oracle denoiser in terms of the marginal distribution of the measurements; it avoids the explicit computation of the posterior Fr&eacute;chet mean (as required by the Bayes denoiser) via a first-order approximation, hence we refer to it as the "tangential" Bayes denoiser. We show that this surrogate oracle achieves nearly the Bayes risk in a low-noise regime, we construct a fully data-driven approximation of it using the spectral theory of the Laplace-Beltrami operator, and we establish finite-sample rates of convergence for the distance between the the surrogate oracle and its approximation. Contrasting the nearly-parametric rates from the Euclidean setting, the rates in the Riemannian setting are slower due to the singularities of the Riemannian Gaussian density at the cut locus of its Fr&eacute;chet mean; in the special case of the circle we establish matching lower bounds which show that our proposed denoiser is minimax-optimal, and that the denoising problem exhibits a genuinely nonparametric rate of convergence. Our theory and simulations reveal that pooling information across different measurements&mdash;namely, by shrinking towards high-density regions and stretching away from low-density regions&mdash;can substantially outperform the na&iuml;ve denoiser that treats each measurement separately. Lastly, we implement our methodology in two scientific applications: in astronomy, the sphere-valued problem of denoising the locations of gamma ray bursts; in structural biology, the torus-valued problem of denoising pairs of torsion angles of adjacent amino acids in a protein (i.e., the Ramachandran plot).
-        </li>
-
-
-      <li class="body">
-          <i>Wasserstein-Cram&eacuter-Rao theory of unbiased estimation</i>
-            with Nicol&aacutes Garc&iacutea Trillos and Bodhisattva Sen<br>
-            Submitted (2026+).<br>
-            <a href="javascript:void(0)" onclick="toggle_visibility('abWCR');">[abstract]</a>
-            <a href="https://arxiv.org/abs/2511.07414">[arxiv]</a>
-        </li>
-        <li class="abstract" id='abWCR' style='display: none;'>
-            The quantity of interest in the classical Cram&eacuter-Rao theory of unbiased estimation (e.g., the Cram&eacuter-Rao lower bound, its exact attainment for exponential families, and asymptotic efficiency of maximum likelihood estimation)  is the variance, which represents the instability of an estimator when its value is compared to the value for an independently-sampled data set from the same distribution. In this paper we are interested in a quantity which represents the instability of an estimator when its value is compared to the value for an infinitesimal additive perturbation of the original data set; we refer to this as the "sensitivity" of an estimator. The resulting theory of sensitivity is based on the Wasserstein geometry in the same way that the classical theory of variance is based on the Fisher-Rao (equivalently, Hellinger) geometry, and this insight allows us to determine a collection of results which are analogous to the classical case: a Wasserstein-Cram&eacuter-Rao lower bound for the sensitivity of any unbiased estimator, a characterization of models in which there exist unbiased estimators achieving the lower bound exactly, and some concrete results that show that the Wasserstein projection estimator achieves the lower bound asymptotically. We use these results to treat many statistical examples, sometimes revealing new optimality properties for existing estimators and other times revealing entirely new estimators.
         </li>
 
         <li class="body">
@@ -95,10 +72,37 @@
             The core of the proof is a novel technical result in optimal transport, which shows that the Kantorovich dual problem is well-behaved for optimal transport problems whose cost functions can be written as a non-increasing limit of lower semi-continuous functions.
         </li>
 
+      <br><br>
+      <p><b>In revision</b></p>
+
+      <ul>
+        <li class="body">
+          <i>Nonparametric Riemannian empirical Bayes, denoising measurements on manifolds</i> with Leonardo Santoro and Bodhisattva Sen<br>
+            In revision, <b>Annals of Statistics</b>.<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abNPREB');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2606.11183">[arxiv]</a>
+            <a href="https://github.com/aqjaffe/RiemannianEB">[code]</a>
+        </li>
+        <li class="abstract" id='abNPREB' style='display: none;'>
+            We initiate the study of nonparametric empirical Bayes denoising methods in the setting where both the latent variables and their measurements lie on a compact Riemannian manifold, and where the likelihood is a Riemannian Gaussian distribution. Our starting point is a novel Tweedie-Eddington formula for Riemannian Gaussian mixture models which identifies a certain surrogate oracle denoiser in terms of the marginal distribution of the measurements; it avoids the explicit computation of the posterior Fr&eacute;chet mean (as required by the Bayes denoiser) via a first-order approximation, hence we refer to it as the "tangential" Bayes denoiser. We show that this surrogate oracle achieves nearly the Bayes risk in a low-noise regime, we construct a fully data-driven approximation of it using the spectral theory of the Laplace-Beltrami operator, and we establish finite-sample rates of convergence for the distance between the the surrogate oracle and its approximation. Contrasting the nearly-parametric rates from the Euclidean setting, the rates in the Riemannian setting are slower due to the singularities of the Riemannian Gaussian density at the cut locus of its Fr&eacute;chet mean; in the special case of the circle we establish matching lower bounds which show that our proposed denoiser is minimax-optimal, and that the denoising problem exhibits a genuinely nonparametric rate of convergence. Our theory and simulations reveal that pooling information across different measurements&mdash;namely, by shrinking towards high-density regions and stretching away from low-density regions&mdash;can substantially outperform the na&iuml;ve denoiser that treats each measurement separately. Lastly, we implement our methodology in two scientific applications: in astronomy, the sphere-valued problem of denoising the locations of gamma ray bursts; in structural biology, the torus-valued problem of denoising pairs of torsion angles of adjacent amino acids in a protein (i.e., the Ramachandran plot).
+        </li>
+
+
+      <li class="body">
+          <i>Wasserstein-Cram&eacuter-Rao theory of unbiased estimation</i>
+            with Nicol&aacutes Garc&iacutea Trillos and Bodhisattva Sen<br>
+            In revision, <b>Annals of Statistics</b>.<br>
+            <a href="javascript:void(0)" onclick="toggle_visibility('abWCR');">[abstract]</a>
+            <a href="https://arxiv.org/abs/2511.07414">[arxiv]</a>
+        </li>
+        <li class="abstract" id='abWCR' style='display: none;'>
+            The quantity of interest in the classical Cram&eacuter-Rao theory of unbiased estimation (e.g., the Cram&eacuter-Rao lower bound, its exact attainment for exponential families, and asymptotic efficiency of maximum likelihood estimation)  is the variance, which represents the instability of an estimator when its value is compared to the value for an independently-sampled data set from the same distribution. In this paper we are interested in a quantity which represents the instability of an estimator when its value is compared to the value for an infinitesimal additive perturbation of the original data set; we refer to this as the "sensitivity" of an estimator. The resulting theory of sensitivity is based on the Wasserstein geometry in the same way that the classical theory of variance is based on the Fisher-Rao (equivalently, Hellinger) geometry, and this insight allows us to determine a collection of results which are analogous to the classical case: a Wasserstein-Cram&eacuter-Rao lower bound for the sensitivity of any unbiased estimator, a characterization of models in which there exist unbiased estimators achieving the lower bound exactly, and some concrete results that show that the Wasserstein projection estimator achieves the lower bound asymptotically. We use these results to treat many statistical examples, sometimes revealing new optimality properties for existing estimators and other times revealing entirely new estimators.
+        </li>
+
         <li class="body">
           <i>Constrained denoising, empirical Bayes, and optimal transport</i> with Nikolaos
             Ignatiadis and Bodhisattva Sen.<br>
-            Submitted (2026+).<br>
+            In revision, <b>Journal of the Royal Statistical Society Ser B</b>.<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abDenoisingEBOT');">[abstract]</a>
             <a href="https://arxiv.org/abs/2506.09986">[arxiv]</a>
             <a href="https://github.com/aqjaffe/constrained-denoising-EB-OT">[code]</a>
@@ -115,7 +119,7 @@
       <li class="body">
           <i>Large deviations principle for Bures-Wasserstein barycenters</i>
             with Leonardo Santoro.<br>
-            Submitted (2026+).<br>
+            In revision, <b>Annals of Applied Probability</b>.<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abBWLDP');">[abstract]</a>
             <a href="https://arxiv.org/abs/2409.11384">[arxiv]</a>
         </li>
@@ -125,7 +129,7 @@
 
       <li class="body">
           <i>Fr&eacute;chet means in infinite dimensions</i>.<br>
-            Submitted (2026+).<br>
+            In revision, <b>SIAM Journal on Mathematical Analysis</b>.<br>
             <a href="javascript:void(0)" onclick="toggle_visibility('abFrechetInf');">[abstract]</a>
             <a href="https://arxiv.org/abs/2410.17214">[arxiv]</a>
         </li> 
